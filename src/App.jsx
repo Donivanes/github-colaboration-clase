@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router';
 import { Home } from './routes/Home';
 import { Navbar } from './components/Navbar';
 import { Pablo } from './routes/Pablo';
+import { Raul } from './routes/Raul';
 
 const App = () => {
   return (
