@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 
-const Pablo = () => {
+export const Pablo = () => {
   return (
     <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
       <div className="container mx-auto px-4">
@@ -18,4 +18,3 @@ const Pablo = () => {
   );
 };
 
-export default Pablo;
