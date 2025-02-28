@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router';
 import { Home } from './routes/Home';
 import { Navbar } from './components/Navbar';
+import { Dogs } from './routes/Dogs';
 import { About } from './routes/About';
 import { Pablo } from './routes/Pablo';
 import { Raul } from './routes/Raul';
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/pablo" element={<Pablo />} />
         <Route path="/raul" element={<Raul />} />
+        <Route path="/dogs" element={<Dogs />} />
       </Route>
     </Routes>
   );

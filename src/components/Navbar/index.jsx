@@ -1,18 +1,27 @@
 import { NavLink, Outlet } from 'react-router';
 
 export const Navbar = () => {
+  const navbarLink = [
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/pablo', label: 'Pablo' },
+    { to: '/dogs', label: 'Dogs' },
+    { to: '/raul', label: 'Raul' },
+  ];
+
   return (
     <>
       <nav className="bg-gray-800 text-white p-4 flex gap-4">
-        <NavLink to="/" end>
-          Home
-        </NavLink>
-        <NavLink to="/about" end>
-          About
-        </NavLink>
-        <NavLink to="/pablo" end>
-          Pablo
-        </NavLink>
+        {navbarLink.map((link) => (
+          <NavLink
+            to={link.to}
+            end
+            key={link.label}
+            className="hover:text-gray-300"
+          >
+            {link.label}
+          </NavLink>
+        ))}
       </nav>
       <Outlet />
     </>
