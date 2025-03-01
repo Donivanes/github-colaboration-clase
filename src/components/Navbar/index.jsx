@@ -7,6 +7,7 @@ export const Navbar = () => {
     { to: '/pablo', label: 'Pablo' },
     { to: '/dogs', label: 'Dogs' },
     { to: '/raul', label: 'Raul' },
+    { to: '/raul2', label: 'Raul2' },
   ];
 
   return (

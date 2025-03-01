@@ -5,6 +5,7 @@ import { Dogs } from './routes/Dogs';
 import { About } from './routes/About';
 import { Pablo } from './routes/Pablo';
 import { Raul } from './routes/Raul';
+import { Raul2 } from './routes/Raul2';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/pablo" element={<Pablo />} />
         <Route path="/raul" element={<Raul />} />
         <Route path="/dogs" element={<Dogs />} />
+        <Route path="/raul2" element={<Raul2 />} />
       </Route>
     </Routes>
   );
